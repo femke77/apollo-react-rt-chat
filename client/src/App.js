@@ -1,6 +1,14 @@
-
-import ChannelsList from "./ChannelsList";
-import Channel from "./ChannelDetails";
+import React, { Component } from "react";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  split
+} from "@apollo/client";
+import { HttpLink } from "apollo-link-http";
+import "./App.css";
+import ChannelsList from "./components/ChannelsList";
+import Channel from "./components/ChannelDetails";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { WebSocketLink } from "@apollo/client/link/ws";
 import { getMainDefinition } from "@apollo/client/utilities";
