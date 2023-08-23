@@ -1,30 +1,12 @@
 
-Took over the following code and now refactoring for multi channel including refactor from v2 to v3.
-currently working on branch 'with-channels' for the chat rooms. 
-with-channels is from old apollo tutorial that I am updating.  
 
+## Branch subscriptions - IP
 
+GraphQL real-time messaging with channels, now using subscriptions over websocket instead of polling. Example of using split from @apollo/client to use websocket link with http link. 
 
-# devThoughts
-This is a real-time chat app created for the [GraphQL for Beginners](https://lo-victoria.com/series/graphql) series on my blog.
+````
+npm i
+npm run dev
+``````
 
-![img](https://cdn.hashnode.com/res/hashnode/image/upload/v1617283127887/toUkcAy_cv.png)
-
-
-### Technologies Used
-<p>
-<img src="https://img.shields.io/badge/-GraphQL%20-black?style=for-the-badge&logo=graphql&logoColor=blueviolet">
-<img src="https://img.shields.io/badge/-Expressjs%20-%23323330?style=for-the-badge&logo=express">
-<img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react" >   
-<img src="https://img.shields.io/badge/-Nodejs%20-%23323330?style=for-the-badge&logo=Node.js&logoColor=green">
-<img src="https://img.shields.io/badge/-Apollo%20GraphQL-311C87?logo=apollo%20graphql&logoColor=white&style=for-the-badge">
-</p>
-
-
-### Demo
-![demo](https://cdn.hashnode.com/res/hashnode/image/upload/v1617185843961/_c4WXjooW.gif)
-
-### Getting Started
-1. Clone this repo
-2. `npm install` on both `client` and `server` folders
-3. `npm start`
+Server side is working and can be tested in Apollo sandbox. Client side is still IP. 
